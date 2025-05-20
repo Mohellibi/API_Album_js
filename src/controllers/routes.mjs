@@ -6,5 +6,6 @@ import Auth from './middlewares/auth.mjs';
 export default {
   Photos,
   Albums,
-  Auth
+  Auth,
+  Pipeline
 };

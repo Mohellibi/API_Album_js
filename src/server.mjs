@@ -80,6 +80,7 @@ const Server = class Server {
     new routes.Albums(this.app, this.connect);
     new routes.Photos(this.app, this.connect);
     new routes.Auth(this.app, this.connect);
+    new routes.Pipeline(this.app, this.connect);
 
     // 404 Middleware
     this.app.use((req, res, next) => {

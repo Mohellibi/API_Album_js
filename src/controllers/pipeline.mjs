@@ -21,7 +21,7 @@ class Pipeline {
                 const ibanrandom = await axios.get('https://randommer.io/api/Finance/Iban/fr', { headers });
                 const carterandom = await axios.get('https://randommer.io/api/Card?type=visa', { headers });
                 const namerandom = await axios.get('https://randommer.io/api/Name?nameType=firstname&quantity=1', { headers });
-                //const animalrandom = await axios.get('https://randommer.io/animal?count=1', { headers });
+                //const animalrandom = await axios.get('https://randommer.io/pets_name?count=1', { headers }); il ny a pas d'api pour les animaux
 
                 res.status(200).json({
                     user: Userrandom.data,
